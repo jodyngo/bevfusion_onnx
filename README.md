@@ -6,5 +6,5 @@ Convert BEVFusion to ONNX
 
 2- Run srcipts:
 
-python bevfusion_onnx_lidar_cam.py configs/bevfusion_lidar_CAM.py [checkpoint_path] [lidar_path] [image_path]
+python bevfusion_onnx_lidar_cam.py config/bevfusion_lidar_CAM.py [checkpoint_path] [lidar_path] [image_path]
 
