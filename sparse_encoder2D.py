@@ -86,11 +86,7 @@ class BEVFusion2DEncoder(nn.Module):
             )
         self.conv3d = nn.Conv3d(in_channels=self.in_channels, out_channels=self.in_channels, kernel_size=3, padding=1)
 
-    # def forward(self, voxel_features, coors, batch_size):
     def forward(self, dense_grid):
-        # coors = coors.float()
-        # dense_grid = self.densify_voxels(coors, voxel_features, self.sparse_shape, int(batch_size)) # conv3d out shape: torch.Size([1, 5, 1440, 1440, 41])
-        # dense_grid = dense_grid.permute(0, 1, 4, 2, 3).contiguous()        
         output_features = self.conv3d(dense_grid.to(self.conv3d.weight.device)) # nn.Conv3d expects (N, C, D, H, W)
         # print("conv3d out shape:", output_features.shape) # Output: [N, 4, D, H, W]
         N, C, D, H, W = output_features.shape
