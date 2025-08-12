@@ -2,7 +2,7 @@
 Convert BEVFusion to ONNX. We replaced sparse convolution by Conv3d convolution.
 
 # Installation
-1- Install the official MMdetection3D
+1- Install the official MMdetection3D. https://github.com/open-mmlab/mmdetection3d/tree/main/projects/BEVFusion
 
 2- Run srcipts:
 
