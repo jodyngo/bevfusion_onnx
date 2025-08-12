@@ -8,3 +8,5 @@ Convert BEVFusion to ONNX. We replaced sparse convolution by Conv3d convolution.
 
 python bevfusion_onnx_lidar_cam.py config/bevfusion_lidar_CAM.py [checkpoint_path] [lidar_path] [image_path]
 
+python bevfusion_onnx_lidar.py config/bevfusion_lidar_ONLY_adverse.py [checkpoint_path] [lidar_path] [image_path]
+
