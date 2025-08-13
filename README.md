@@ -14,5 +14,7 @@ python bevfusion_onnx_lidar.py config/bevfusion_lidar_ONLY_adverse.py [checkpoin
 
 4- Solve Top-K issue. Run thi_simplifyonnx.py
 
-5- Convert to tensorrt: trtexec --onnx=/var/local/home/thungo/mmdetection3d/projects/BEVFusion/demo/bevfusion_lidar_cam_s17_mod.onnx --saveEngine=/var/local/home/thungo/mmdetection3d/projects/BEVFusion/demo/bevfusion_lidar_cam.engine --memPoolSize=workspace:2147483648 --fp16
+5- Convert to tensorrt: 
+
+trtexec --onnx=/var/local/home/thungo/mmdetection3d/projects/BEVFusion/demo/bevfusion_lidar_cam_s17_mod.onnx --saveEngine=/var/local/home/thungo/mmdetection3d/projects/BEVFusion/demo/bevfusion_lidar_cam.engine --memPoolSize=workspace:2147483648 --fp16
 
