@@ -1,5 +1,5 @@
 # bevfusion_onnx
-3D Object Detection. Convert BEVFusion to ONNX. 
+MMdetection3d. 3D Object Detection. Convert BEVFusion to ONNX. 
 
 # Installation
 1- Install the official MMdetection3D. https://github.com/open-mmlab/mmdetection3d/tree/main/projects/BEVFusion
